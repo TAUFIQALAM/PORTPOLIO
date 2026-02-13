@@ -3,131 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taufiq Alam - Salesforce Developer Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Taufiq Alam | Salesforce Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">TA<span>.</span></a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact" class="btn-primary">Hire Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
         <div class="container">
+            <p class="greeting">Hello, I'm</p>
             <h1>Taufiq Alam</h1>
-            <p>Salesforce Developer</p>
-            <div class="contact">
-                <p>Phone: 7860879724</p>
-                <p>Email: <a href="mailto:Taufeeque2015@gmail.com">Taufeeque2015@gmail.com</a></p>
-                <p>Location: Pune, Maharashtra</p>
-                <p><a href="https://linkedin.com/in/taufiqalam" target="_blank">LinkedIn</a> | <a href="https://trailhead.salesforce.com/en/me/taufiqalam" target="_blank">Trailhead</a></p>
+            <h2 class="dynamic-text">Salesforce Developer</h2>
+            <p class="hero-desc">
+                With 3.5+ years of experience, I architect scalable solutions across Health, Sales, and Service Clouds using Apex, LWC, and complex integrations.
+            </p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn-dark">View Work</a>
+                <a href="https://linkedin.com" target="_blank" class="btn-outline"><i class="fab fa-linkedin"></i> LinkedIn</a>
             </div>
         </div>
     </header>
 
-    <nav>
+    <section id="skills" class="section">
         <div class="container">
-            <ul>
-                <li><a href="#summary">Summary</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-            </ul>
+            <h3 class="section-title">Technical Expertise</h3>
+            <div class="skills-grid">
+                <div class="skill-card">Apex Development</div>
+                <div class="skill-card">LWC</div>
+                <div class="skill-card">REST/SOAP Integration</div>
+                <div class="skill-card">OmniStudio</div>
+                <div class="skill-card">Cloud Architecture</div>
+                <div class="skill-card">SOQL/SOSL</div>
+                <div class="skill-card">Flows & Automation</div>
+                <div class="skill-card">Performance Optimization</div>
+            </div>
         </div>
-    </nav>
+    </section>
 
-    <main>
-        <section id="summary" class="container">
-            <h2>Summary</h2>
-            <p>Salesforce Developer with 3.5+ years of experience delivering end-to-end Salesforce solutions across multiple clouds. Expert in Apex, Lightning Web Components, Flows, Complex Integrations, with a proven track record of optimizing system performance and delivering high-stakes projects under tight deadlines. Experienced in designing scalable automations, optimizing performance, resolving production issues, and recognized for mentoring junior talent. A well-rounded Salesforce professional with strong analytical, communication, and problem-solving skills.</p>
-        </section>
-
-        <section id="skills" class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>Apex Development</li>
-                <li>Lightning Web Components (LWC)</li>
-                <li>Flows & Advanced Automation</li>
-                <li>Salesforce Integrations (REST/SOAP)</li>
-                <li>Data Management & SOQL/SOSL</li>
-                <li>Cloud Architecture & Configuration</li>
-                <li>Debugging & Performance Optimization</li>
-            </ul>
-        </section>
-
-        <section id="experience" class="container">
-            <h2>Experience</h2>
-            <div class="job">
-                <h3>Salesforce Developer | Cloudwerx</h3>
-                <p>Jul 2022 – Present | Pune, Maharashtra</p>
-                <ul>
-                    <li>Technical Leadership: Architected scalable solutions across Health, Sales, and Service Clouds using LWC, Apex, and complex REST/SOAP integrations for global clients.</li>
-                    <li>Platform Optimization: Engineered reusable modular frameworks and high-performance asynchronous Apex to streamline high-volume data operations and ensure production stability.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="projects" class="container">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>MPM (Global Client – Integration & Data Operations)</h3>
-                <ul>
-                    <li>Architected asynchronous Apex frameworks (Batch, Queueable) to process high-volume datasets, ensuring 100% adherence to Salesforce governor limits.</li>
-                    <li>Engineered secure REST/SOAP integrations with third-party platforms like Proda, automating real-time data synchronization and reducing manual data entry.</li>
-                    <li>Optimized SOQL queries, resulting in a 25% improvement in transaction speeds across complex data modules.</li>
-                </ul>
-            </div>
-            <div class="project">
-                <h3>PRP (Healthcare Client – Appointment Management)</h3>
-                <ul>
-                    <li>Independently spearheaded the end-to-end delivery of a custom Appointment Booking System utilizing the Health Cloud data model.</li>
-                    <li>Developed a modular UI suite using LWC and OmniStudio (OmniScripts & FlexCards), improving the patient scheduling experience and reducing booking drop-off rates.</li>
-                    <li>Managed full-cycle deployment under a high-pressure 3-month timeline, meeting all compliance and security standards.</li>
-                </ul>
-            </div>
-            <div class="project">
-                <h3>Woolworths (Retail Client – Experience Cloud)</h3>
-                <ul>
-                    <li>Enhanced Community Portals by building responsive, multi-page LWC components, increasing user engagement for retail partners.</li>
-                    <li>Leveraged Connect API to streamline complex backend automations, resolving legacy production bugs and maintaining 99.9% system availability.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="education" class="container">
-            <h2>Education</h2>
-            <div class="education">
-                <h3>Bachelor of Technology in Electronics & Communication Engineering</h3>
-                <p>Lakshmi Narain College of Technology and Science | 2018 – 2022 | Bhopal, MP</p>
-            </div>
-        </section>
-
-        <section id="certifications" class="container">
-            <h2>Certifications</h2>
-            <ul>
-                <li>Sales Cloud Consultant</li>
-                <li>Platform Developer I</li>
-                <li>JavaScript Developer I</li>
-                <li>Salesforce Administrator</li>
-                <li>Platform App Builder</li>
-                <li>Salesforce Associate</li>
-                <li>Salesforce AI Associate</li>
-                <li>CPQ Specialist Certification</li>
-            </ul>
-        </section>
-
-        <section id="achievements" class="container">
-            <h2>Achievements</h2>
-            <ul>
-                <li>Ownership: Delivered the PRP Appointment Booking System independently under strict deadlines.</li>
-                <li>Innovation: Developed a GPT-powered Prompt Builder app that translated business requirements into technical prompts, cutting development discovery time by 20%.</li>
-                <li>Leadership: Mentored and upskilled 10+ graduates through the SARTHI initiative, focusing on LWC and Apex best practices.</li>
-                <li>Critical Resolution: Recognized for overnight resolution of high-priority production outages, preventing significant business downtime for global clients.</li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
+    <section id="projects" class="section bg-light">
         <div class="container">
-            <p>&copy; 2023 Taufiq Alam. All rights reserved.</p>
+            <h3 class="section-title">Featured Work</h3>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="card-content">
+                        <span class="tag">Integration</span>
+                        <h4>MPM Global Operations</h4>
+                        <p>Architected asynchronous Apex frameworks to process high-volume datasets. Improved transaction speeds by 25% through SOQL optimization.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-content">
+                        <span class="tag">Health Cloud</span>
+                        <h4>PRP Appointment System</h4>
+                        <p>Spearheaded end-to-end delivery of a custom Appointment Booking System using OmniStudio and LWC for a seamless patient experience.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-content">
+                        <span class="tag">Retail</span>
+                        <h4>Woolworths Portals</h4>
+                        <p>Enhanced Community Portals with responsive multi-page LWC components, maintaining 99.9% system availability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3 class="section-title">Achievements</h3>
+                    <ul class="list-style">
+                        <li><strong>Innovation:</strong> Developed a GPT-powered Prompt Builder app.</li>
+                        <li><strong>Leadership:</strong> Mentored 10+ graduates (SARTHI initiative).</li>
+                        <li><strong>Critical:</strong> Resolved high-priority overnight production outages.</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3 class="section-title">Certifications</h3>
+                    <div class="cert-badges">
+                        <span class="badge">Platform Developer I</span>
+                        <span class="badge">Sales Cloud Consultant</span>
+                        <span class="badge">JavaScript Developer I</span>
+                        <span class="badge">CPQ Specialist</span>
+                        <span class="badge">AI Associate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <h2>Let's build something great.</h2>
+            <p>Currently based in Pune, Maharashtra</p>
+            <div class="contact-info">
+                <a href="tel:7860879724"><i class="fas fa-phone"></i> 7860879724</a>
+                <a href="mailto:Taufeeque2015@gmail.com"><i class="fas fa-envelope"></i> Taufeeque2015@gmail.com</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Taufiq Alam. Built for Performance.</p>
+            </div>
         </div>
     </footer>
 
